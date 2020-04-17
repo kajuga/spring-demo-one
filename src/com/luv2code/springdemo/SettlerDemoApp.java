@@ -2,20 +2,21 @@ package com.luv2code.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class HelloSpringApp {
+public class SettlerDemoApp {
 
     public static void main(String[] args) {
 
+        //load the spring configuration file
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Coach theCoach = context.getBean("myCoach", Coach.class);
-
-        System.out.println(theCoach.getDailyWorkout());
-
-        System.out.println(theCoach.getDailyFortune());
+        //retrieve bean from spring container
 
 
-        context.close();
+        //call methods on the bean
+
+        //close the context
+
+
 
 
 

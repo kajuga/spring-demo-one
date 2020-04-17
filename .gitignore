@@ -68,9 +68,9 @@ buildNumber.properties
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
 # .idea/modules.xml
-# .idea/*.iml
+ .idea/*.iml
 # .idea/modules
-# *.iml
+ *.iml
 # *.ipr
 
 # CMake
@@ -106,7 +106,7 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-/.idea/java-school.iml
+/.idea/spring-demo.iml
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
@@ -114,3 +114,5 @@ fabric.properties
 /.idea/encodings.xml
 /.idea/artifacts/java_school_war.xml
 /.idea/artifacts/java_school_war_exploded.xml
+
+#/home/kajuga/projects/spring-demo-one/spring-demo-one.iml

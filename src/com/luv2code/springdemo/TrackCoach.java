@@ -3,14 +3,9 @@ package com.luv2code.springdemo;
 public class TrackCoach implements Coach {
     private FortuneService fortuneService;
 
-    public TrackCoach() {
-//        System.out.println("TrackCouch: inside no-arg constructor");
-    }
+    public TrackCoach() {}
 
-    public TrackCoach(FortuneService fortuneService) {
-//        System.out.println("TrackCouch: inside constructor ");
-        this.fortuneService = fortuneService;
-    }
+    public TrackCoach(FortuneService fortuneService) {this.fortuneService = fortuneService;}
 
     @Override
     public String getDailyWorkout() {
@@ -20,6 +15,15 @@ public class TrackCoach implements Coach {
     @Override
     public String getDailyFortune() {
         return "Just Do IT: " + fortuneService.getFortune();
+    }
+
+    public void doMyStartupStuff() {
+        System.out.println("TrackCoach: inside method doMyStartupStuff");
+    }
+
+    public void doMyCleanupStuff() {
+        System.out.println("TrackCoach: inside method doMyCleanupStuff");
+
     }
 
 

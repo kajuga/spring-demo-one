@@ -14,7 +14,7 @@ private FortuneService fortuneService;
     }
 
     @Override
-    public String getDailyFortune() {
+    public String getDailyFortune()  {
         return fortuneService.getFortune();
     }
 

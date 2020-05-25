@@ -1,4 +1,4 @@
-package com.luv2code.springdemo;
+package com.fedorov.springdemo;
 
 public class CricketCoach implements Coach {
     private FortuneService fortuneService;

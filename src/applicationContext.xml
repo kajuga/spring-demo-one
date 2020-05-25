@@ -12,27 +12,25 @@
     <context:property-placeholder location="sport.properties"/>
 
     <bean id="myFortuneService"
-          class="com.luv2code.springdemo.HappyFortuneService">
+          class="com.fedorov.springdemo.HappyFortuneService">
     </bean>
 
 <!--    init with constructor-->
     <bean id="myCoach"
-          class="com.luv2code.springdemo.TrackCoach">
+          class="com.fedorov.springdemo.TrackCoach">
         <constructor-arg ref="myFortuneService"/>
     </bean>
 
 <!--init with SET method in class.. word "<property name.."-->
     <bean id="myCricketCoach"
-        class="com.luv2code.springdemo.CricketCoach">
+        class="com.fedorov.springdemo.CricketCoach">
         <property name="fortuneService" ref="myFortuneService"/>
-
-
         <property name="emailAddress" value="${foo.email}"/>
         <property name="team" value="${foo.team}"/>
     </bean>
 
 
     <bean id="myCoach2"
-          class="com.luv2code.springdemo.TrackCoach">
+          class="com.fedorov.springdemo.TrackCoach">
     </bean>
 </beans>
